@@ -1,0 +1,30 @@
+SELECT "campaigns"."months" AS "months",
+  "campaigns"."n_contacts_previous" AS "n_contacts_previous",
+  "campaigns"."n_contacts_campaign" AS "n_contacts_campaign",
+  "campaigns"."outcome" AS "outcome",
+  "campaigns"."poutcome" AS "poutcome",
+  "campaigns"."subscription_id" AS "subscription_id"
+FROM "public"."campaigns" "campaigns"
+
+
+SELECT "person"."age" AS "age",
+  "person"."credit" AS "credit",
+  "person"."housing" AS "housing",
+  "person"."loan" AS "loan",
+  "person"."marital" AS "marital",
+  "person"."person_id" AS "person_id"
+FROM "public"."person" "person"
+
+SELECT "professionallife"."age" AS "age (professionallife)",
+  "professionallife"."education" AS "education",
+  "professionallife"."job" AS "job",
+  "professionallife"."proflife_id" AS "proflife_id"
+FROM "public"."professionallife" "professionallife"
+
+SELECT "taxes"."cons_conf_idx" AS "cons_conf_idx",
+  "taxes"."cons_price_idx" AS "cons_price_idx",
+  "taxes"."emp_var_rate" AS "emp_var_rate",
+  "taxes"."euribor3m" AS "euribor3m",
+  "taxes"."nr_employed" AS "nr_employed",
+  "taxes"."taxes_id" AS "taxes_id"
+FROM "public"."taxes" "taxes"
